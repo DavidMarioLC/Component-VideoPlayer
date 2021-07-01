@@ -1,0 +1,16 @@
+@import "./button.css";
+@import "./video.css";
+@import "./wrapper.css";
+@import "./reproductorVideo.css";
+@import "./playerActions.css";
+@import "./progress.css";
+
+:root {
+  --primary: #110133;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  background: var(--primary);
+}

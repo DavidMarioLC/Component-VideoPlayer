@@ -1,0 +1,34 @@
+.button {
+  border: none;
+  padding: 0;
+  inline-size: 40px;
+  block-size: 40px;
+  background: transparent;
+  font-size: 1rem;
+  color: var(--white);
+  background: rgba(0, 0, 0, 0.466);
+  border-radius: 50%;
+  text-align: center;
+
+  cursor: pointer;
+}
+.button i {
+  vertical-align: sub;
+}
+.button:active {
+  transform: scale(0.8);
+}
+
+.button.button--backward:active {
+  transform: rotate(-60deg);
+}
+
+.button.button--forward:active {
+  transform: rotate(60deg);
+}
+
+/* animations */
+.button.button--backward,
+.button.button--forward {
+  transition: transform 250ms ease;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video player</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+  </head>
+  <body>
+    <div class="reproductorVideo">
+      <div class="wrapper">
+        <div class="reproductorVideo__content">
+          <video
+            class="video"
+            poster="./assets/poster-unlikePluto.webp"
+            src="./assets/Ray-Charles -Hit-The-Road-Jack.mp4"
+            id="video"
+          ></video>
+
+          <div class="reproductorVideo__overlay">
+            <h2 class="reproductorVideo__title">
+              Ray Charles - Hit The Road Jack
+            </h2>
+            <div class="playerActions">
+              <button
+                class="button button--backward"
+                id="backward"
+                title="Retroceder"
+                aria-label="Retroceder"
+              >
+                <i class="fi-rr-time-past"></i>
+              </button>
+              <button
+                class="button button--pause"
+                id="pause"
+                title="Pausar"
+                aria-label="Pausar"
+                hidden="true"
+              >
+                <i class="fi-rr-pause"></i>
+              </button>
+              <button
+                class="button button--play"
+                id="play"
+                title="Reproducir"
+                aria-label="Reproducir"
+              >
+                <i class="fi-rr-play"></i>
+              </button>
+              <button
+                class="button button--forward"
+                id="forward"
+                title="Adelantar"
+                aria-label="Adelantar"
+              >
+                <i class="fi-rr-time-forward"></i>
+              </button>
+            </div>
+            <div class="progress">
+              <input
+                id="range"
+                class="progress__input"
+                min="0"
+                step="1"
+                value="0"
+                type="range"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

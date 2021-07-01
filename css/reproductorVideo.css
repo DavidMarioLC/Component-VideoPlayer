@@ -1,0 +1,28 @@
+.reproductorVideo {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reproductorVideo__content {
+  position: relative;
+}
+
+.reproductorVideo__title {
+  position: absolute;
+  color: var(--white);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  top: 0;
+  left: 1rem;
+}
+
+.reproductorVideo__overlay {
+  opacity: 0;
+  will-change: opacity;
+  transition: opacity 250ms ease;
+}
+
+.reproductorVideo__overlay:hover {
+  opacity: 1;
+}
