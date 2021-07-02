@@ -11,8 +11,8 @@
 .reproductorVideo__title {
   position: absolute;
   color: var(--white);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   top: 0;
   left: 1rem;
 }
